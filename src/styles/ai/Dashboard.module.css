@@ -1,0 +1,354 @@
+/* -----------------------------------------------------------AI LEft Dashboard */
+.aiLeftDashboard{
+    width: 240px;
+    flex-shrink: 0; /* Prevents shrinking */
+    background-color: var(--dashboard-bg);
+    /* padding: 16px 12px; */
+    z-index: 2;
+    border-right: 1px solid var(--chat-border);
+    padding-top: 31px;
+  }
+  .aiLeftDashboardContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: sticky;
+    top: 80px;
+    height: 88vh;
+  }
+  .aiDashboardLogo{
+    display: none;
+  }
+  .chatDashboardNewChat{
+    padding:0px 14px;
+}
+.chatDashboardNewChat a{
+text-decoration: none;
+display: flex;
+gap: 0.3rem;
+align-items: center;
+width: max-content;
+background-color: var(--dashboard-hover-bg);
+border-radius: 6px;
+font-size: 12px;
+font-family: var(--h-font);
+color: var(--p-color);
+font-weight: 400;
+padding: 9px 12px;
+border-radius: 8px;
+}
+.chatDashboardNewChat a:hover{
+    background-color: var(--dashboard-click-bg);
+    color: var(--h-color);
+}
+  .aiLeftDashboardAgents,.aiLeftDashboard-recent-searches,.aiLeftDashboard-recent-searches-contents{
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .aiLeftDashboard-recent-searches,.aiLeftDashboard-recent-searches-contents{
+    gap: 0px;
+  }
+  .aiLeftDashboardContainer h2{
+    padding-left: 0.5rem;
+    font-size: 11px;
+    font-family: var(--h-font);
+    color: var(--dashboard-h-color);
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    background-color: var(--dashboard-bg);
+    position: sticky;
+    top: 0px;
+  }
+  .aiLeftDashboardContents, .aiLeftDashboard-recent-searches a{
+    padding:0.4rem 0.6rem;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: var(--p-font);
+    color: var(--p-color);
+  }
+  .aiLeftDashboardContents:hover, .aiLeftDashboard-recent-searches a:hover{
+    background-color: var(--dashboard-hover-bg);
+  
+  }
+  .aiLeftDashboardContents.active, .aiLeftDashboard-recent-searches a.active{
+    background-color: var(--dashboard-click-bg);
+  }
+
+
+  .chatDashboardRecents {
+    padding: 14px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    min-height: 100px;
+    max-height: 260px;
+    overflow-y: auto;
+    scrollbar-gutter: none; 
+}
+.chatDashboardRecents::-webkit-scrollbar {
+    width: 8px;
+    display: none;
+}
+.chatDashboardRecents:hover::-webkit-scrollbar {
+    display: block;
+}
+
+.chatDashboardRecents::-webkit-scrollbar-track {
+    background: inherit;
+    border-radius: 10px;
+}
+
+.chatDashboardRecents::-webkit-scrollbar-thumb {
+    background: #d9d9d9;
+    border-radius: 10px;
+}
+.chatDashboardRecents:hover {
+    scrollbar-width: thin;
+}
+.chatDashboardRecents h3{
+    padding-left: 8px;
+    font-size: 15px;
+    font-family: var(--h-font);
+    color: var(--h-color);
+    font-weight: 500;
+}
+ .chatDashboardRecentsContents{
+    display: flex;
+    flex-direction: column;
+ }
+ .contentGenerationRecentSearch.active{
+    background-color: var(--dashboard-click-bg);
+ }
+.chatDashboardRecents a{
+    font-size: 13px;
+    font-family: var(--p-font);
+    color: var(--p-color);
+    font-weight: 400;
+    padding: 8px 8px;
+    border-radius: 8px;
+}
+.chatDashboardRecents a:hover{
+    background-color: var(--dashboard-hover-bg);
+}
+.chatDashboardRecents a.active{
+    background-color: var(--dashboard-click-bg);
+}
+.chatDashboardViewMoreBtn{
+    font-size: 11px;
+    font-family: var(--p-font);
+    color: var(--p-color);
+    font-weight: 400;
+    padding: 6px 7px;
+    border-radius: 8px;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chat-dashboard-prompts-left{
+    padding: 0px 14px;
+
+}
+.chat-dashboard-prompts-left p{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    background-color: var(--dashboard-hover-bg);
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: var(--h-font);
+    color: var(--dashboard-h-color);
+    font-weight: 400;
+}
+
+.chatDashboardAccount{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    padding-bottom: 8px;
+    /* top:580px */
+}
+.chatDashboardAccountContainer{
+    padding: 10px 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    gap: 0.5rem;
+}
+.chatDashboardAccountContents{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.chatDashboardAccountProfile{
+    width: 32px;
+    height: 32px;
+    background-color: var(--black-white);
+    font-size: 14px;
+    font-family: var(--h-font);
+    color: var(--white-black);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.chatDashboardAccountEmail{
+    font-size: 13px;
+    font-family: var(--h-font);
+    color: var(--p-color);
+    font-weight: 400;
+    white-space: nowrap;         /* Prevent text from wrapping */
+  overflow: hidden;            /* Hide overflowed content */
+  text-overflow: ellipsis;     /* Add ellipsis when the text overflows */
+  /* width: 170px;             */
+  display: inline-block; 
+}
+.chatDashboardSettings{
+    margin: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+   width: 199px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+    bottom: 48px;
+    left: 0px;
+    right: 0px
+}
+.chatDashboardSettingsContainer{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    background-color: inherit;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.chatDashboardSettingsTheme{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 4px;
+}
+.chatDashboardSettingsTheme p{
+    font-size: 13px;
+    font-family: var(--h-font);
+    color: var(--h-color);
+    font-weight: 400;
+}
+.settingsThemeIndicator {
+    width: 40px;
+    height: 23px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2px; 
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+}
+.settingsThemeIndicatorLight {
+    width: 50%;
+    height: 100%;
+    background-color: var(--black-white);
+    border-radius: 50%;
+    visibility: hidden;/* Hide by default */
+}
+
+.settingsThemeIndicatorDark {
+    width: 50%;
+    height: 100%;
+    background-color: var(--black-white);
+    border-radius: 50%;
+    visibility: hidden; /* Hide by default */
+}
+
+.settingsThemeIndicatorLight.active {
+    visibility: visible; /* Show when active */
+}
+
+.settingsThemeIndicatorDark.active {
+    visibility: visible; /* Show when active */
+}
+
+.chatDashboardSettingsLogout{
+    padding: 5px;
+    font-size: 13px;
+    font-family: var(--h-font);
+    color: var(--h-color);
+    font-weight: 400;
+    border-radius: 4px;
+}
+.chatDashboardSettingsLogout:hover{
+    background-color: var(--dashboard-click-bg);
+}
+
+
+@media only screen and (max-width:800px){
+    .chat-dashboard {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0px;
+        box-shadow: 300px 0px 0px 200px var(--box-shadow);
+    }
+    .aiDashboardLogo{
+        display: block;
+        padding: 14px;
+    }
+    .aiDashboardLogo img{
+        width: auto;
+        height: 15px;
+    }
+}
+
+
+  @media only screen and (max-width:800px){
+
+    .aiLeftDashboard{
+
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            width: 300px;
+            flex-shrink: 0;
+            background-color: var(--dashboard-bg);
+            z-index: 100; /* Higher z-index */
+            border-right: 1px solid var(--chat-border);
+            padding-top:6px;
+            box-shadow: 300px 0 0 200px var(--box-shadow);
+
+    }
+    .aiLeftDashboardContainer{
+        height: 100%;
+    }
+    .chatDashboardAccount{
+        /* position: static; */
+        top: initial;
+        padding-bottom: 20px;
+    }
+    .chatDashboardSettings{
+        bottom: 60px;
+        width: 258px;
+    }
+  }
+

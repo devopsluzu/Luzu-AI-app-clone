@@ -1,0 +1,290 @@
+
+.luzuAi{
+  padding-top: 48px;
+    background-color: #F8F8F8;
+    display: flex;
+    min-height: 100%;
+    height: auto;
+    background-color: var(--chat-bg);
+    position: relative;
+}
+.luzuAiComponent{
+  width: 100%;
+    display: flex;
+  }
+  
+  
+  /* .luzuChat-dashboard-desktop{
+    padding-top: 48px;
+  } */
+  @media only screen and (max-width:800px){
+    .luzuAiComponent{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 0;
+    }
+    .luzuChat-dashboard-desktop{
+      display: none;
+    }
+  
+    .luzuChat-dashboard-menu-icon{
+      font-size: 24px;
+      color:var(--black-white);
+    }
+  }
+  
+  .luzuChat{
+    flex-grow: 1;
+      height: 100%;
+      position: relative;
+      padding: 24px;
+      padding-bottom: 76px;
+      padding-top: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .luzuChatContainer{
+    width: 100%;
+    padding-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .luzuChatMsgContainer{
+    width: 79%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 100%;
+    height: auto;
+  }
+  .luzuChatMsgContainer.centerContent{
+    justify-content: center;
+    align-items: center;
+}
+.emptyStateTitle{
+  font-size: 32px;
+  font-family: var(--h-font);
+  color: var(--dashboard-h-color);
+  font-weight: 600;
+  padding-bottom: 120px;
+  text-align: center;
+}
+  .tcMsgs {
+    padding: 4px 13px;
+    border-radius: 12px;
+    font-family: var(--h-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    width: 100%;
+    align-self: flex-start; 
+  }
+
+  .tcMsgs.user {
+    align-self: flex-end; 
+    background-color: var(--user-chat);
+    width: max-content;
+    max-width: 75%;
+  }
+  
+  .tcMsgs.bot {
+    width: 85%;
+    align-self: flex-start; 
+    background-color: var(--bot-background); 
+    padding: 0px;
+    border: 0px;
+  }
+  .tcMsgsEvents{
+  display: flex;
+  gap:0.5rem;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 12px;
+  }
+  .tcMsgsEvents img{
+    cursor: pointer;
+  }
+  .tcMsgs h1,.tcMsgs h2,
+  .tcMsgs h3,.tcMsgs h4,
+  .tcMsgs h5{
+    font-size: 20px;
+    font-family: var(--h-font);
+    color: var(--h-color);
+    font-weight: 600;
+    line-height: 140%;
+  }
+  .tcMsgs p{
+    font-size: 16px;
+    font-family: var(--h-font);
+    color: var(--p-color);
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0.5rem 0px;
+  }
+  .tcMsgs p strong{
+    font-size: 16px;
+    font-family: var(--h-font);
+    color: var(--h-color);
+    font-weight: 600;
+    line-height: 140%;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .tcMsgs ul, .tcMsgs ol{
+    padding-left: 1.25rem;
+  }
+  .tcMsgs li{
+    margin: 0.5rem 0rem;
+    font-size: 16px;
+    font-family: var(--h-font);
+    color: var(--p-color);
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .tcMsgs li strong{
+    font-size: 16px;
+    font-family: var(--h-font);
+    color: var(--h-color);
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .code{
+    color: var(--p-color);
+  }
+  .luzuChatPrompt{
+    width: 100%; 
+    position: sticky; 
+    bottom: 0;
+    background-color: var(--chat-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+  }
+  /* .chat-input-upgrade-close{
+    position: absolute;
+    right: 12px;
+  } */
+  .luzuChatPromptInput{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--chat-border);
+    border-radius: 12px;
+    background-color: var(--chat-bg);
+  
+  }
+  .luzuChatPromptInput input{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--chat-bg);
+    font-size: 16px;
+    font-family: var(--h-font);
+    font-weight: 400;
+    color: var(--p-color);
+  }
+  .luzuChatPromptInput input:focus{
+    outline: none;
+  }
+  /* .luzuChat-send-btn{
+    width: 36px;
+    height: 34px;
+    border-radius: 32%;
+    background-color: var(--chat-button-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .luzuChat-send-btn.change{
+    background-color: var(--chat-button-hover-bg);
+  } */
+  .luzuChatPromptInput button{
+    padding: 14px 42px;
+    height: auto;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--h-color);
+    font-size: 16px;
+    font-family: var(--h-font);
+    font-weight: 300;
+    color: var(--chat-bg);
+  }
+  .luzuChatInputGenerateButton{
+    height: 100%;
+    padding: 15px 20px;
+    background-color: var(--black-white);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 14px;
+    font-family: var(--h-font);
+    font-weight: 400;
+    color: var(--white-black);
+  }
+  
+  
+  @media only screen and (max-width:1300px){
+    .luzuChatPromptInput,.chat-input-upgrade{
+      width: 80%;
+    }
+    .luzuChatMsgContainer{
+      width: 79%;
+    }
+  }
+  @media only screen and (max-width:1100px){
+    .luzuChatPromptInput,.chat-input-upgrade{
+      width: 90%;
+    }
+    .luzuChatMsgContainer{
+      width: 89%;
+    }
+  }
+  @media only screen and (max-width:800px){
+    
+    .luzuChat{
+      flex-grow: 1;
+      height: 100%;
+      position: relative;
+      padding: 24px;
+      padding-bottom: 0px;
+      padding-top: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      overflow-y: initial;
+      /* margin-left: 240px;  */
+   
+    }
+    .luzuChatPrompt{
+      position: fixed;
+    }
+    .luzuChatMsgContainer{
+      padding-bottom: 80px;
+    }
+  }
+  @media only screen and (max-width:400px){
+    
+    .luzuChat{
+  padding: 0px
+   
+    }
+    .luzuChatMsgContainer{
+      width: 95%;
+      padding: 0.5rem;
+      padding-bottom: 80px;
+    }
+  }
+  
+  
+  

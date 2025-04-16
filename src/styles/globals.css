@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  
+    --h-font:'Open Sans', sans-serif;
+    --p-font:'Inter', sans-serif;
+    --luzu-black:#000000;
+    --luzu-white:#ffffff;
+    /* --luzu-clr:#515BDA; */
+    --h-black:#1e1e1e;
+    --p-black:#414141;
+    --h-white:#ffffff;
+    --p-white:#d1d1d1;
+    --box-border:#E0E0E0;
+    --bg-grey:#f8f8f8;
+
+ 
+
+
+--chat-bg:#ffffff;
+--dashboard-bg:#fafafa;
+--dashboard-hover-bg:#f4f4f4;
+--dashboard-click-bg:#f1f1f1;
+--chat-button-bg:#1B1C1D;
+--chat-button-hover-bg:#b2b2b2;
+--dashboard-h-color:#616161;
+--h-color:1e1e1e;
+--p-color:#343434;
+--border-color:#dfdfdf;
+--black-white:#1B1C1D;
+--white-black:#ffffff;
+--user-chat:#f5f5f5;
+--box-shadow:#c0c0c0bf;
+--chat-border:#e8e8e8;
+--luzu-clr:#434ab1;
+--box-bg:#efefef;
+--box-inside-border:#e1e1e1;
+--keyword-intent:#8990e7;
+  }
+
+  .dark {
+    --chat-bg:#252525;
+    --dashboard-bg:#1c1c1c;
+    --dashboard-hover-bg:#292929;
+    --dashboard-click-bg:#2e2e2e;
+    --chat-button-bg:#ececec;
+    --chat-button-hover-bg:#646464;
+    --dashboard-h-color:#9e9e9e;
+    --h-color:#dbdbdb;
+    --p-color:#cdcdcd;
+    --border-color:#333333;
+    --black-white:#ececec;
+    --white-black:#1c1c1c;
+    --user-chat:#363636;
+    --box-shadow:#1f1f1fbf;
+    --chat-border:#404040;
+    --luzu-clr:#4047ab;
+    --box-bg:#3c3c3c;
+    --box-inside-border:#494949;
+    --keyword-intent:#5d63ae;
+
+  }
+
+  *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+    
+    body {
+      margin: 0;
+      overflow-y: scroll;
+      background-color: var(--chat-bg);
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: var(--chat-bg);
+
+  }
+  
+
+  /* @media only screen and (max-width: 800px) {
+    .luzu-chat-dashboard-hamburger {
+        display: block;
+        padding: 16px;
+        height: max-content;
+    }
+} */

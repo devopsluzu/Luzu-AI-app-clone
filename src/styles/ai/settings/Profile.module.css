@@ -1,0 +1,152 @@
+.settingsProfile{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+.settingsProfileContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.settingsProfileCredentials, .settingsProfileLinks{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    border-radius: 16px;
+    background-color: var(--chat-bg);
+    border: 1px solid var(--chat-border);
+}
+.settingsProfileCredentialsContents{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--chat-border);
+    padding: 14px 0px;
+}
+.settingsProfileCredentialsContents:last-child{
+    border: 0px;
+}
+.profileCredentialsTitle{
+    font-size: 14px;
+    font-family: var(--p-font);
+    color: var(--h-color);
+    font-weight: 400;
+}
+.profileCredentialsEdit{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.profileCredentialsEditing{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.profileCredentialsEditing p{
+    font-size: 13px;
+    font-family: var(--p-font);
+    color: var(--p-color);
+    font-weight: 400;
+}
+.profileCredentialsSave{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.profileCredentialsSaveInput{
+    width: 200px;
+    padding: 8px 12px;
+    border: 1px solid var(--chat-border);
+    border-radius: 8px;
+    background-color: var(--chat-bg);
+    font-size: 13px;
+    font-family: var(--p-font);
+    color: var(--p-color);
+    font-weight: 400;
+}
+.profileCredentialsSaveButton{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.3rem;
+}
+.profileSaveBtn, .profileCancelBtn{
+    padding: 6px;
+    border: 1px solid var(--chat-border);
+    background-color: var(--dashboard-bg);
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: var(--p-font);
+    color: var(--p-color);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+}
+#profile-phone-number{
+    border: 0px;
+}
+
+.settingsProfileLinks{
+    gap: 1rem;
+}
+.settingsProfileLinksTitle p{
+    font-size: 15px;
+    font-family: var(--p-font);
+    color: var(--h-color);
+    font-weight: 500;
+}
+.settingsProfileLinksSocial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.settingsProfileLinksSocialContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--chat-border);
+}
+.settingsProfileLinksSocialContainer:last-child{
+    border: 0px;
+}
+.settingsProfileLinksSocialTitle{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.settingsProfileLinksSocialTitle p{
+    font-size: 14px;
+    font-family: var(--p-font);
+    color: var(--h-color);
+    font-weight: 400;
+}
+.socialLinksAdd{
+    padding: 8px;
+    border: 1px solid var(--chat-border);
+    background-color: var(--dashboard-bg);
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: var(--p-font);
+    color: var(--p-color);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+@media only screen and (max-width:400px){
+    .settingsProfileContainer{
+        gap: 1rem;
+    }
+    .settingsProfileCredentialsContents, .settingsProfileLinksSocialContainer{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .settingsProfileLinks{
+        margin-bottom: 60px;
+    }
+}

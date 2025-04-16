@@ -1,0 +1,44 @@
+{
+  "name": "prfec-ai-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@google-cloud/secret-manager": "^5.6.0",
+    "@kinde-oss/kinde-auth-nextjs": "^2.5.6",
+    "@mui/material": "^6.4.7",
+    "@next/third-parties": "^15.2.4",
+    "@slate-editor/bold-plugin": "^5.1.0",
+    "axios": "^1.8.2",
+    "email-validator": "^2.0.4",
+    "firebase": "^11.6.0",
+    "groq": "^3.78.1",
+    "groq-sdk": "^0.15.0",
+    "html2pdf.js": "^0.10.3",
+    "marked": "^15.0.7",
+    "next": "^15.2.4",
+    "next-themes": "^0.4.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-select-country-list": "^2.2.3",
+    "slate-editor": "^5.1.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "tailwindcss": "^4"
+  }
+}
