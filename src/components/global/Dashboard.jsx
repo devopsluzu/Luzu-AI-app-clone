@@ -496,7 +496,7 @@ const AiDashboard = ({ menuOpen, setMenuOpen }) => {
                   </div>
                 </div>
                 <LogoutLink
-                  postLogoutRedirectURL="https://app.luzu.ai/"
+                  postLogoutRedirectURL="http://localhost:3000"
                   className={styles.chatDashboardSettingsLogout}
                 >
                   Logout

@@ -27,7 +27,7 @@ const Data = () => {
       <div className="settings-data-contents">
         <p>Log out </p>
         <LogoutLink
-          postLogoutRedirectURL="https://app.luzu.ai/"
+          postLogoutRedirectURL="http://localhost:3000"
           className="delete-account"
         >
           Log out
