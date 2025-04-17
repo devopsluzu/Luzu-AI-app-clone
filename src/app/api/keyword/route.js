@@ -105,9 +105,10 @@ const client = new SecretManagerServiceClient();
 
 async function getSecret() {
   const [version] = await client.accessSecretVersion({
-    name: "projects/592134571427/secrets/GROQ_API_KEY/versions/latest",
+    name: `projects/534452319131/secrets/GROQ_API_KEY/versions/latest`,
   });
-  return version.payload.data.toString().trim();
+  const apiKey = version.payload.data.toString("utf8").trim();
+  return apiKey;
 }
 
 export async function POST(request) {
@@ -115,7 +116,7 @@ export async function POST(request) {
 
     const apiKey = await getSecret(); // Fetch API key dynamically
     // console.log(apiKey)
-    const groq = new Groq({ apiKey });
+    const groq = new Groq({ apiKey: apiKey.trim()});
 
     const { keyword, country } = await request.json();
     if (!keyword || !country) {
