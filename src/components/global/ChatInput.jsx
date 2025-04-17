@@ -102,6 +102,7 @@ export default function ChatInput({
               ? "var(--black-white)"
               : "var(--black-white)",
             height: "100%",
+            cursor:"pointer",
           }}
           onClick={handleSendMessage}
         >

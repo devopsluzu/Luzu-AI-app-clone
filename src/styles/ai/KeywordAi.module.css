@@ -152,6 +152,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 0.3rem;
+    cursor: pointer;
   }
   .keywordGeneratorSearchInputButton.loading {
     animation: blink 1.5s infinite;
