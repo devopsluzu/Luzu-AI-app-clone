@@ -230,6 +230,7 @@
     font-family: var(--h-font);
     font-weight: 400;
     color: var(--white-black);
+    cursor: pointer;
   }
   
   
