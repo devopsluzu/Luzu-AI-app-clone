@@ -1,0 +1,16 @@
+steps:
+  - name: 'gcr.io/cloud-builders/yarn'
+    entrypoint: 'yarn'
+    args: ['install']
+
+  - name: 'gcr.io/cloud-builders/yarn'
+    entrypoint: 'yarn'
+    args: ['build']
+
+  - name: 'gcr.io/cloud-builders/yarn'
+    entrypoint: 'yarn'
+    args: ['start']
+    env:
+      - 'PORT=8080'
+
+timeout: 900s
