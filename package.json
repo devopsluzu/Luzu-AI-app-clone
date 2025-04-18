@@ -8,7 +8,8 @@
   "scripts": {
   "dev": "next dev",
   "build": "next build",
-  "start": "next start",
+  "start": "next start -p $PORT",
+  "gcp-build": "yarn build",
   "lint": "next lint"
 },
   "dependencies": {
