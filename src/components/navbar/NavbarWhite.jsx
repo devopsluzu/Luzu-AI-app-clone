@@ -89,7 +89,7 @@ export const NavbarWhite = () => {
               <Link className={styles.settings} href="/settings/profile">
                 Settings
               </Link>
-              <LogoutLink postLogoutRedirectURL="https://app.luzu.ai/api/auth/register">
+              <LogoutLink postLogoutRedirectURL="https://app.luzu.ai">
                 Logout
               </LogoutLink>
             </div>
@@ -119,7 +119,7 @@ export const NavbarWhite = () => {
               >
                 Settings
               </div>
-              <LogoutLink postLogoutRedirectURL="https://app.luzu.ai/api/auth/register">
+              <LogoutLink postLogoutRedirectURL="https://app.luzu.ai">
                 Logout
               </LogoutLink>
             </div>
