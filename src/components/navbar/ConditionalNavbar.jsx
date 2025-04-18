@@ -8,8 +8,7 @@ export default function ConditionalNavbar() {
   const footerHiddenPaths = [
     "/ai",
     "/content-generation-ai",
-    "/login",
-    "/signup",
+    "/api/auth/register",
   ];
 
   return !footerHiddenPaths.includes(pathname) ? (

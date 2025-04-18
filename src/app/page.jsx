@@ -7,7 +7,7 @@ export default async function Page() {
 
   const authenticated = await isAuthenticated();
   if (!authenticated) {
-    redirect("/api/auth/login");
+    redirect("/api/auth/register");
     return null;
   }
 
