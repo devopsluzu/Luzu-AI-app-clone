@@ -1,0 +1,18 @@
+steps:
+  - name: 'gcr.io/cloud-builders/yarn'
+    args: ['install']
+
+  - name: 'gcr.io/cloud-builders/yarn'
+    args: ['build']
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'luzu-ai-app-clone'                  # <== your Cloud Run service name
+      - '--region=us-central1'               # <== your region
+      - '--platform=managed'
+      - '--allow-unauthenticated'
+      - '--source=.'                         # deploy from current source
+      - '--port=8080'                        # optional if Next.js listens on 8080
