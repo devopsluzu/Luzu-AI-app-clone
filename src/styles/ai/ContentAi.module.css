@@ -126,7 +126,7 @@ width: max-content;
     font-size: 18px;
     font-weight: 700;
 }
-.meta-description, .content p{
+.meta-description, .content p, .aiMessage p{
     color: var(--p-color);
     margin-top: 6px;
     font-family: var(--p-font);
